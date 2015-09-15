@@ -13,30 +13,41 @@ body {
     text-align: center;
     border-radius: 0px !important;
 }
-ul{
-    background: white;
-    border: solid black 2px;
-    padding: 20px;
-    font-size: 1.5em;
-    margin-top: -30px;
-    -webkit-transition: all 0.2s ease-in-out;
-    marin-left: -10px;
-    text-align: center;
-}
 
-li {
-    color: skyblue;
-    display: inline;
-    padding: 0px 30px;
-    list-style-type: none;
-    padding: 25px 50px;
-    -webkit-transition: all 0.2s ease-in-out;
-    margin: 0px -3px;
+#nav {
+    text-align: justify;
+    min-width: 300px;
+    margin-right: 40px;
 }
-li:hover {
-    background: black;
-    color: white;
+#nav:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+#nav li {
+    display: inline-block;
 }
 a {
+    text-decoration: none !important;
     color: inherit;
+}
+a:hover {
+    color: inherit;
+}
+button {
+  border-radius: 3px;
+    font-size: 2em;
+    padding: 15px;
+    background: transparent;
+    border: solid rgba(255,255,255,0.5) 2px;
+    -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2 ease-in-out;
+}
+button:hover {
+    background: #FFF;
+}
+.current {
+    background: white;
 }
